@@ -75,7 +75,6 @@ def post_detail(request, year, month, day, post):
                                                      'similar_posts': similar_posts})
 
 
-
 def post_share(request, post_id):
     # Retrieve post by id
     post = get_object_or_404(Post, id=post_id, status='published')
@@ -101,6 +100,9 @@ def post_share(request, post_id):
 
 def post_search(request):
     form = SearchForm()
+    cd = None
+    results = None
+    total_results = None
     if 'query' in request.GET:
         form = SearchForm(request.GET)
         if form.is_valid():
