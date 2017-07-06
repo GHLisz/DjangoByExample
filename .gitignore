@@ -180,3 +180,5 @@ $RECYCLE.BIN/
 *.lnk
 
 /mysite/db.sqlite3
+/bookmarks/media/
+/bookmarks/db.sqlite3
