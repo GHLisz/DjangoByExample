@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'social.apps.django_app.default',
     'images',
+    'sorl.thumbnail',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -130,3 +131,7 @@ SOCIAL_AUTH_TWITTER_KEY = 'XXX' # Twitter Consumer Key
 SOCIAL_AUTH_TWITTER_SECRET = 'XXX' # Twitter Consumer Secret
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '' # Google Consumer Key
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '' # Google Consumer Secret
+
+ABSOLUTE_URL_OVERRIDES = {
+    'auth.user': lambda u: reverse_lazy('user_detail', args=[u.username])
+}
