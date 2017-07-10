@@ -182,3 +182,5 @@ $RECYCLE.BIN/
 /mysite/db.sqlite3
 /bookmarks/media/
 /bookmarks/db.sqlite3
+/myshop/db.sqlite3
+/myshop/media/

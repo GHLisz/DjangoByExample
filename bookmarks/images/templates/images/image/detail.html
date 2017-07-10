@@ -38,6 +38,10 @@
                 Nobody likes this image yet.
             {% endfor %}
         </div>
+        <span class="count">
+            <span class="total">{{ total_views }}</span>
+            view{{ total_views|pluralize }}
+        </span>
     {% endwith %}
 {% endblock %}
 
