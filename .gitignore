@@ -185,3 +185,4 @@ $RECYCLE.BIN/
 /myshop/db.sqlite3
 /myshop/media/
 /myshop/static/
+/educa/db.sqlite3
